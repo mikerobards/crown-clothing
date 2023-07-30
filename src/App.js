@@ -1,22 +1,12 @@
-import { Routes, Route, Outlet } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 
 import Home from './components/routes/home/home.component';
+import Navbar from './components/navbar/navbar.component';
+import SignIn from './components/routes/sign-in/sign-in.component';
 
-const Navbar = () => {
-  return (
-    <div>
-      <div>
-        <h1>
-          Navbar
-        </h1>
-      </div>
-      <Outlet />
-    </div>
-  )
-}
 
 const Shop = () => {
-  return <h1>Shop</h1>
+  return <h1>This is the Shop</h1>
 }
 
 const App = () => {
@@ -25,6 +15,7 @@ const App = () => {
       <Route path="/" element={<Navbar />}>
         <Route index element={<Home />} />
         <Route path="shop" element={<Shop />} />
+        <Route path="sign-in" element={<SignIn />} />
       </Route>
     </Routes>
   );
