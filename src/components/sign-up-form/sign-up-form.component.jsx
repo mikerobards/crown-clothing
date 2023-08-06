@@ -19,8 +19,6 @@ const SignUpForm = () => {
     const [formFields, setFormFields] = useState(defaultFormFields);
     const { displayName, email, password, confirmPassword } = formFields;
 
-    console.log(formFields);
-
     const resetFormFields = () => {
         setFormFields(defaultFormFields);
     };
@@ -41,6 +39,8 @@ const SignUpForm = () => {
         } catch (error) {
             console.log('user creation encountered an error', error);
         }
+
+
     };
 
     const handleChange = (event) => {
