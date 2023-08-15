@@ -67,4 +67,4 @@ export const DirectoryItemContainer = styled.div`
             font-size: 16px;
         }
     }
-}
+`;

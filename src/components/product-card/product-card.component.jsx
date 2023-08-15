@@ -4,7 +4,7 @@ import { CartContext } from '../../context/cart.context';
 
 import Button, { BUTTON_TYPE_CLASSES } from '../button/button.component';
 
-import { ProductCardContainer, Footer, Name, Price } from './product-card.styles.jsx';
+import { ProductCardContainer, ImageContainer, Footer, Name, Price } from './product-card.styles.jsx';
 
 const ProductCard = ({ product }) => {
     const { name, price, imageUrl } = product;
@@ -13,7 +13,7 @@ const ProductCard = ({ product }) => {
 
     return (
         <ProductCardContainer>
-            <img src={imageUrl} alt={`${name}`} />
+            <ImageContainer src={imageUrl} alt={`${name}`} />
             <Footer>
                 <Name>{name}</Name>
                 <Price>{price}</Price>

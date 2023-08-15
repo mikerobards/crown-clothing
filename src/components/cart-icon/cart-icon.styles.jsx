@@ -10,7 +10,7 @@ export const CartIconContainer = styled.div`
     cursor: pointer;
 `;
 
-export const ShoppingIcon = styled.div`
+export const ShopIcon = styled.div`
     width: 24px;
     height: 24px;
 `;
