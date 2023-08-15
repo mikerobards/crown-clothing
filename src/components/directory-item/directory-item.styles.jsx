@@ -1,4 +1,6 @@
-.directory-item-container {
+import styled from 'styled-components';
+
+export const DirectoryItemContainer = styled.div`
     min-width: 30%;
     height: 240px;
     flex: 1 1 auto;
@@ -11,7 +13,7 @@
 
     &:hover {
         cursor: pointer;
-
+        
         & .background-image {
             transform: scale(1.1);
             transition: transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
@@ -52,7 +54,7 @@
         background-color: white;
         opacity: 0.7;
         position: absolute;
-
+        
         h2 {
             font-weight: bold;
             margin: 0 6px 0;
